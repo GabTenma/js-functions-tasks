@@ -1,5 +1,10 @@
 import _ from 'lodash';
 
-// BEGIN
+const average = (...rest) => {
+  // BEGIN
+  if (rest.length === 0) return null;
+  return _.sum(rest) / rest.length;
+  // END
+};
 
-// END
+export default average;
